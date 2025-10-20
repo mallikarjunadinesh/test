@@ -1,0 +1,10 @@
+package com.scb.rwtoolbackend.dto;
+
+import lombok.Data;
+
+@Data
+public class LoginRequest {
+    private String username;
+    private String password;
+    private String role; // Role is sent from the front-end to identify which table to check
+}
